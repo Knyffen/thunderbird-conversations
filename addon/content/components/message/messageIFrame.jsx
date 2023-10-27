@@ -483,6 +483,20 @@ export class MessageIFrame extends React.Component {
     return styleRules;
   }
 
+  tweakImages(iframeDoc, styleRules) {
+    if (this.props.prefs.tweakImages) {
+        // Forces images to stay inside the viewport
+        styleRules = styleRules.concat([
+        "img {",
+        "  max-width: 100vw;",
+        "  height: auto !important;",
+        "}",
+        ]);
+    }
+
+    return styleRules;
+  }
+
   async detectQuotes(iframe) {
     // Launch various crappy pieces of code heuristics to
     // convert most common quoting styles to real blockquotes. Spoiler:
@@ -585,6 +599,7 @@ export class MessageIFrame extends React.Component {
     }
     const iframeDoc = this.iframe.contentDocument;
     let styleRules = this.tweakFonts(iframeDoc);
+    styleRules = this.tweakImages(iframeDoc, styleRules);
     if (
       !(this.props.realFrom && this.props.realFrom.includes("bugzilla-daemon"))
     ) {

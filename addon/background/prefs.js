@@ -11,6 +11,7 @@ export const kPrefDefaults = {
   uninstall_infos: "{}",
   logging_enabled: false,
   tweak_bodies: true,
+  tweak_images: true,
   tweak_chrome: true,
   operate_on_conversations: false,
   extra_attachments: false,

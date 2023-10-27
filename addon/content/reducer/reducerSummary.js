@@ -35,6 +35,7 @@ export const initialSummary = {
     noFriendlyDate: false,
     operateOnConversations: false,
     tweakBodies: true,
+    tweakImages: true,
     tweakChrome: true,
   },
 };

@@ -84,6 +84,16 @@
     "description": "Options - description for tweaking message body fonts."
   },
 
+  "options.tweak_images_title": {
+    "message": "Tweak images",
+    "description": "Options - title for tweaking message images."
+  },
+
+  "options.tweak_images_desc": {
+    "message": "Tweak the images in the message bodies to make them fit inside the viewport.",
+    "description": "Options - description for tweaking message images."
+  },
+
   "options.operate_on_conversations_title": {
     "message": "Archive/delete behavior",
     "description": "Options - title for archive/delete behavior."

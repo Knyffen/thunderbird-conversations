@@ -94,6 +94,14 @@ const PREFS_INFO = [
   },
   {
     props: {
+      title: "options.tweak_images_title",
+      desc: "options.tweak_images_desc",
+      name: "tweak_images",
+    },
+    component: BinaryOption,
+  },
+  {
+    props: {
       title: "options.operate_on_conversations_title",
       desc: "options.operate_on_conversations_desc",
       name: "operate_on_conversations",

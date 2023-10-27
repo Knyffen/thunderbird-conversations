@@ -460,6 +460,7 @@ async function setupUserPreferences(dispatch, getState) {
         operateOnConversations:
           newPrefs.preferences?.operate_on_conversations ?? false,
         tweakBodies: newPrefs.preferences?.tweak_bodies ?? true,
+        tweakImages: newPrefs.preferences?.tweak_images ?? true,
         tweakChrome: newPrefs.preferences?.tweak_chrome ?? true,
       })
     );
